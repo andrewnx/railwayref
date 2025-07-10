@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://railwayguide.dev/sitemap-index.xml
+
+# Crawl-delay for better performance
+Crawl-delay: 1
+
+# Disallow admin or private directories if any
+# Disallow: /admin/
+# Disallow: /private/

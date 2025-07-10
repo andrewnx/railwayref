@@ -213,9 +213,8 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 					</a>
 					<p class="final-note">
 						<a href="/blog">📚 Check out our Railway tutorials</a> • 
-						<a href="#why-railway">🔄 Learn more about features</a>
-					</p>
-				</div>
+					<a href="#why-railway">🔄 Learn more about features</a>
+				</p>
 			</section>
 		</main>
 		<Footer />
@@ -655,6 +654,124 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 
 		.step {
 			padding: var(--space-4);
+		}
+	}
+</style>
+
+	.benefits-list {
+		list-style: none;
+		padding: 0;
+	}
+
+	.benefits-list li {
+		margin-bottom: 0.5rem;
+		color: rgb(var(--gray-dark));
+	}
+
+	.start-note {
+		font-style: italic;
+		color: rgb(var(--gray));
+		margin-top: 1rem;
+	}
+
+	.start-cta {
+		text-align: center;
+	}
+
+	.referral-disclosure {
+		margin-top: 1rem;
+		color: rgb(var(--gray));
+		max-width: 300px;
+	}
+
+	.testimonials {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.testimonial {
+		padding: 2rem;
+		background: rgba(var(--gray-light), 0.3);
+		border-radius: 8px;
+		text-align: center;
+	}
+
+	.testimonial blockquote {
+		font-style: italic;
+		margin-bottom: 1rem;
+		border-left: none;
+		padding: 0;
+		font-size: 1rem;
+	}
+
+	.testimonial cite {
+		font-weight: 600;
+		color: rgb(var(--gray));
+	}
+
+	.faq {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.faq-item {
+		margin-bottom: 2rem;
+		padding: 1.5rem;
+		background: rgba(var(--gray-light), 0.3);
+		border-radius: 8px;
+	}
+
+	.faq-item h3 {
+		color: rgb(var(--black));
+		margin-bottom: 1rem;
+	}
+
+	.cta-section {
+		text-align: center;
+		padding: 4rem 2rem;
+		background: rgba(var(--gray-light), 0.3);
+		border-radius: 12px;
+	}
+
+	.final-note {
+		margin-top: 2rem;
+		color: rgb(var(--gray));
+	}
+
+	.final-note a {
+		color: var(--accent);
+		text-decoration: none;
+	}
+
+	.final-note a:hover {
+		text-decoration: underline;
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 2rem 1rem;
+			margin: -1rem -1rem 2rem -1rem;
+		}
+
+		.hero h1 {
+			font-size: 2rem;
+		}
+
+		.tutorial-preview,
+		.getting-started {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.btn {
+			width: 100%;
+			max-width: 280px;
 		}
 	}
 </style>

@@ -31,6 +31,10 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="keywords" content="Railway deployment, Railway platform, Railway hosting, Railway tutorial, Railway database, Railway vs Heroku, Railway guide, app deployment, Railway referral" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="English" />
+<meta name="author" content="Railway Platform Guide" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -38,6 +42,7 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:site_name" content="Railway Platform Guide" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -45,3 +50,23 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Additional SEO -->
+<meta name="theme-color" content="#2337ff" />
+<meta name="msapplication-TileColor" content="#2337ff" />
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Railway Platform Guide",
+  "description": "Comprehensive guides and tutorials for Railway deployment platform",
+  "url": "https://railwayguide.dev",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://railwayguide.dev/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
