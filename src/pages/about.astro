@@ -1,14 +1,66 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import { RAILWAY_REFERRAL_LINK } from '../consts';
 ---
 
-<Layout
-	title="About Railway Platform Guide"
-	description="Learn about our mission to help developers discover Railway's powerful deployment platform through comprehensive guides and tutorials."
-	pubDate={new Date('January 08 2025')}
-	heroImage="/blog-placeholder-about.jpg"
->
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead 
+			title="About Railway Platform Guide" 
+			description="Learn about our mission to help developers discover Railway's powerful deployment platform through comprehensive guides and tutorials." 
+		/>
+		<style>
+			body main {
+				max-width: min(1024px, calc(100vw - 32px)) !important;
+				margin: 0 auto !important;
+				padding: 0 16px !important;
+				width: auto !important;
+			}
+			.hero-image {
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+				width: 100%;
+				max-width: 720px;
+			}
+			.content {
+				max-width: min(720px, calc(100vw - 64px));
+				margin: 0 auto;
+				padding: 24px 0;
+				color: rgb(var(--gray-dark));
+			}
+			.title {
+				margin-bottom: 2rem;
+				text-align: center;
+				line-height: 1;
+			}
+			.title h1 {
+				margin: 0;
+				color: rgb(var(--black));
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="hero-image">
+					<img width={1020} height={510} src="/blog-placeholder-about.jpg" alt="About Railway Platform Guide" />
+				</div>
+				<div class="content">
+					<div class="title">
+						<h1>About Railway Platform Guide</h1>
+						<hr />
+					</div>
 	<p>
 		Welcome to Railway Platform Guide, your comprehensive resource for learning about Railway's powerful deployment platform. Our mission is to help developers discover how Railway can transform their development workflow.
 	</p>
@@ -43,4 +95,9 @@ import { RAILWAY_REFERRAL_LINK } from '../consts';
 	<p>
 		<strong>Questions or suggestions?</strong> We'd love to hear from you! Railway has an active community of developers who are always happy to help.
 	</p>
-</Layout>
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -308,6 +308,6 @@ Railway makes database management simple so you can focus on building great appl
 
 ## Ready to Start Building?
 
-[Get started with Railway today](https://railway.app?referralCode=YOUR_CODE) and experience the easiest way to add databases to your applications. The free tier includes database hosting to get you started!
+[Get started with Railway today](https://railway.com/?referralCode=RRANX) and experience the easiest way to add databases to your applications. The free tier includes database hosting to get you started!
 
 *This guide uses Railway referral links. You get the same great experience, and we get a small commission to keep creating helpful database tutorials.*

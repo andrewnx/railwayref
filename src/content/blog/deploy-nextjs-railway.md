@@ -20,7 +20,7 @@ Railway is perfect for Next.js because:
 
 Before we start, make sure you have:
 - A Next.js project in a GitHub repository
-- A Railway account ([sign up here](https://railway.app?referralCode=YOUR_CODE))
+- A Railway account ([sign up here](https://railway.com/?referralCode=RRANX))
 
 ## Step 1: Push Your Next.js App to GitHub
 
@@ -38,7 +38,7 @@ git push -u origin main
 
 ## Step 2: Connect to Railway
 
-1. Go to [Railway](https://railway.app?referralCode=YOUR_CODE) and sign up or log in
+1. Go to [Railway](https://railway.com/?referralCode=RRANX) and sign up or log in
 2. Click "New Project"
 3. Select "Deploy from GitHub repo"
 4. Choose your Next.js repository
@@ -136,6 +136,6 @@ Railway makes Next.js deployment effortless, so you can focus on building great 
 
 ## Ready to Deploy?
 
-[Start your Railway journey today](https://railway.app?referralCode=YOUR_CODE) and experience the easiest way to deploy Next.js applications. The free tier includes everything you need to get started!
+[Start your Railway journey today](https://railway.com/?referralCode=RRANX) and experience the easiest way to deploy Next.js applications. The free tier includes everything you need to get started!
 
 *This guide uses Railway referral links. You get the same great experience, and we get a small commission to keep creating helpful content.*

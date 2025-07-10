@@ -169,6 +169,6 @@ Railway represents the future of app deployment - simple, powerful, and develope
 
 The best part? You can start building today with Railway's generous free tier. No credit card required, no complex setup - just better deployment.
 
-[Start your Railway journey today](https://railway.app?referralCode=YOUR_CODE) and experience what modern deployment should feel like.
+[Start your Railway journey today](https://railway.com/?referralCode=RRANX) and experience what modern deployment should feel like.
 
 *This post contains Railway referral links. You get the same amazing experience, and we get a small commission to keep creating helpful content about modern development tools.*
