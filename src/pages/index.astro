@@ -43,16 +43,16 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 							<p>Push your code and Railway automatically builds and deploys. No complex CI/CD setup required.</p>
 						</div>
 						<div class="feature">
-							<h3>🗄️ Built-in Databases</h3>
-							<p>PostgreSQL, MySQL, Redis, and more. Provision databases with one click and connect instantly.</p>
+							<h3>🗄️ One-Click Databases</h3>
+							<p>PostgreSQL, MySQL, Redis, MongoDB and more. Provision databases instantly and connect with zero configuration.</p>
 						</div>
 						<div class="feature">
 							<h3>🔧 Zero Configuration</h3>
 							<p>Railway automatically detects your framework and configures everything. Deploy in minutes, not hours.</p>
 						</div>
 						<div class="feature">
-							<h3>💰 Fair Pricing</h3>
-							<p>Pay only for what you use. No surprise bills or complex pricing tiers. Start free and scale up.</p>
+							<h3>💰 Usage-Based Pricing</h3>
+							<p>Start with $5 trial credit, then pay only for resources you actually use. Transparent pricing with no hidden fees.</p>
 						</div>
 					</div>
 				</div>
@@ -96,6 +96,51 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 				</div>
 			</section>
 
+			<!-- Framework Support Section -->
+			<section class="section">
+				<div class="container">
+					<h2>Works with Your Favorite Tech Stack</h2>
+					<div class="frameworks">
+						<div class="framework-category">
+							<h3>Frontend Frameworks</h3>
+							<div class="framework-tags">
+								<span class="tag">Next.js</span>
+								<span class="tag">React</span>
+								<span class="tag">Vue</span>
+								<span class="tag">Nuxt</span>
+								<span class="tag">Svelte</span>
+								<span class="tag">Angular</span>
+							</div>
+						</div>
+						<div class="framework-category">
+							<h3>Backend Languages</h3>
+							<div class="framework-tags">
+								<span class="tag">Node.js</span>
+								<span class="tag">Python</span>
+								<span class="tag">Go</span>
+								<span class="tag">Ruby</span>
+								<span class="tag">PHP</span>
+								<span class="tag">Java</span>
+							</div>
+						</div>
+						<div class="framework-category">
+							<h3>Popular Frameworks</h3>
+							<div class="framework-tags">
+								<span class="tag">Laravel</span>
+								<span class="tag">Django</span>
+								<span class="tag">FastAPI</span>
+								<span class="tag">Express</span>
+								<span class="tag">Rails</span>
+								<span class="tag">Spring</span>
+							</div>
+						</div>
+					</div>
+					<p class="framework-note">
+						Railway automatically detects and configures 50+ frameworks. If it's not listed, Railway's flexible Docker support has you covered.
+					</p>
+				</div>
+			</section>
+
 			<!-- Use Cases Section -->
 			<section class="section">
 				<div class="container">
@@ -125,20 +170,16 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 			<section class="section">
 				<div class="container">
 					<h2>Ready to Get Started?</h2>
-					<div class="getting-started">
-						<div class="start-content">
-							<h3>Join thousands of developers who chose Railway</h3>
-							<ul class="benefits-list">
-								<li>✅ Deploy in under 5 minutes</li>
-								<li>✅ No credit card required to start</li>
-								<li>✅ Free tier includes hosting and database</li>
-								<li>✅ Automatic SSL certificates</li>
-								<li>✅ 24/7 monitoring and support</li>
-							</ul>
-							<p class="start-note">
-								<strong>Pro tip:</strong> Use our link to get started with Railway and support this guide!
-							</p>
-						</div>
+					<div class="getting-started">					<div class="start-content">
+						<h3>Join thousands of developers who chose Railway</h3>
+						<ul class="benefits-list">
+							<li>✅ Deploy in under 5 minutes</li>
+							<li>✅ $5 trial credit to get started</li>
+							<li>✅ Full platform access with GitHub verification</li>
+							<li>✅ Automatic SSL certificates</li>
+							<li>✅ Usage-based pricing after trial</li>
+						</ul>
+					</div>
 						<div class="start-cta">
 							<a href={RAILWAY_REFERRAL_LINK} class="btn btn-primary btn-large" target="_blank" rel="noopener">
 								Start Your Railway Journey
@@ -151,33 +192,6 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 				</div>
 			</section>
 
-			<!-- Social Proof Section -->
-			<section class="section">
-				<div class="container">
-					<h2>Why Developers Choose Railway</h2>
-					<div class="testimonials">
-						<div class="testimonial">
-							<blockquote>
-								"Railway turned deployment from a chore into a joy. I can focus on building features instead of managing infrastructure."
-							</blockquote>
-							<cite>- Full-stack Developer</cite>
-						</div>
-						<div class="testimonial">
-							<blockquote>
-								"The developer experience is incredible. Push to git, and your app is live. It's that simple."
-							</blockquote>
-							<cite>- Startup Founder</cite>
-						</div>
-						<div class="testimonial">
-							<blockquote>
-								"Railway's pricing is transparent and fair. No hidden costs or surprise bills. Perfect for indie developers."
-							</blockquote>
-							<cite>- Indie Hacker</cite>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			<!-- FAQ Section -->
 			<section class="section">
 				<div class="container">
@@ -185,7 +199,11 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 					<div class="faq">
 						<div class="faq-item">
 							<h3>Is Railway really free to start?</h3>
-							<p>Yes! Railway offers a generous free tier that includes hosting, databases, and all core features. Perfect for learning and small projects.</p>
+							<p>Yes! Railway offers a $5 trial credit to explore the platform. With a verified GitHub account, you can deploy both applications and databases. After the trial, plans start at $5/month with $5 included usage.</p>
+						</div>
+						<div class="faq-item">
+							<h3>Do I need to verify my GitHub account?</h3>
+							<p>Yes, to deploy code you need to connect and verify your GitHub account. Database-only deployments work without verification. Account verification is automatic based on your GitHub activity and age.</p>
 						</div>
 						<div class="faq-item">
 							<h3>How does Railway compare to other platforms?</h3>
@@ -196,8 +214,8 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 							<p>Absolutely! Railway supports all major frameworks and makes migration simple. Most apps can be deployed in minutes.</p>
 						</div>
 						<div class="faq-item">
-							<h3>What happens if I outgrow Railway?</h3>
-							<p>Railway scales with you. From hobby projects to enterprise applications, Railway handles any scale with transparent pricing.</p>
+							<h3>What happens to my data after the trial?</h3>
+							<p>Railway retains your data for 30 days after trial expiration. To keep your data permanently, upgrade to a paid plan before your trial ends.</p>
 						</div>
 					</div>
 				</div>
@@ -330,6 +348,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 	/* Section Styling */
 	.section {
 		padding: var(--space-20) 0;
+		margin-bottom: var(--space-16); /* Consistent 64px gaps between sections */
 	}
 
 	.section h2 {
@@ -430,6 +449,65 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 		border: 1px solid var(--color-border);
 	}
 
+	/* Framework Support */
+	.frameworks {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: var(--space-8);
+		margin: var(--space-8) 0;
+	}
+
+	.framework-category {
+		padding: var(--space-6);
+		background: var(--color-surface);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--color-border);
+		box-shadow: var(--shadow-sm);
+		text-align: center;
+	}
+
+	.framework-category h3 {
+		margin-bottom: var(--space-4);
+		color: var(--color-primary);
+		font-size: var(--text-lg);
+	}
+
+	.framework-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-2);
+		justify-content: center;
+	}
+
+	.tag {
+		display: inline-block;
+		padding: var(--space-1) var(--space-3);
+		background: var(--color-bg-tertiary);
+		color: var(--color-text);
+		border-radius: var(--radius);
+		font-size: var(--text-sm);
+		font-weight: 500;
+		border: 1px solid var(--color-border);
+		transition: all var(--transition);
+	}
+
+	.tag:hover {
+		background: var(--color-primary);
+		color: white;
+		border-color: var(--color-primary);
+		transform: translateY(-1px);
+	}
+
+	.framework-note {
+		text-align: center;
+		margin-top: var(--space-8);
+		padding: var(--space-4);
+		background: var(--color-bg-secondary);
+		border-radius: var(--radius-lg);
+		color: var(--color-text-secondary);
+		font-style: italic;
+	}
+
 	/* Use Cases */
 	.use-cases {
 		display: grid;
@@ -455,9 +533,9 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 	/* Getting Started */
 	.getting-started {
 		display: grid;
-		grid-template-columns: 1fr auto;
+		grid-template-columns: 1fr 1fr;  /* Equal columns for better balance */
 		gap: var(--space-8);
-		align-items: center;
+		align-items: flex-start;  /* Align to top instead of center */
 		max-width: 1000px;
 		margin: 0 auto;
 	}
@@ -489,6 +567,10 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 
 	.start-cta {
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;  /* Align content to top of column */
+		padding: var(--space-6);  /* Add padding for visual balance */
 	}
 
 	.referral-disclosure {
@@ -622,6 +704,11 @@ import { SITE_TITLE, SITE_DESCRIPTION, RAILWAY_REFERRAL_LINK } from '../consts';
 		}
 
 		.features-grid {
+			grid-template-columns: 1fr;
+			gap: var(--space-6);
+		}
+
+		.frameworks {
 			grid-template-columns: 1fr;
 			gap: var(--space-6);
 		}

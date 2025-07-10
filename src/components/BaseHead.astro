@@ -55,6 +55,35 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta name="theme-color" content="#2337ff" />
 <meta name="msapplication-TileColor" content="#2337ff" />
 
+<!-- Theme initialization script - MUST be inline to prevent flash -->
+<script is:inline>
+  // Immediately apply stored theme to prevent flash
+  (function() {
+    const getStoredTheme = () => {
+      if (typeof localStorage !== 'undefined') {
+        return localStorage.getItem('theme');
+      }
+      return null;
+    };
+    
+    const getPreferredTheme = () => {
+      const stored = getStoredTheme();
+      if (stored) {
+        return stored;
+      }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    
+    const theme = getPreferredTheme();
+    document.documentElement.setAttribute('data-theme', theme);
+    
+    // Store the theme if it wasn't already stored
+    if (typeof localStorage !== 'undefined' && !getStoredTheme()) {
+      localStorage.setItem('theme', theme);
+    }
+  })();
+</script>
+
 <!-- JSON-LD Schema -->
 <script type="application/ld+json">
 {

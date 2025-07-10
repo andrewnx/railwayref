@@ -16,8 +16,11 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title="Railway Tutorials & Guides - Railway Platform Guide" description="Learn Railway deployment with step-by-step tutorials for Next.js, React, Node.js, databases, and more. Complete guides for modern app deployment." />
 		<style>
-			main {
-				width: 960px;
+			body main {
+				max-width: min(1024px, calc(100vw - 32px)) !important;
+				margin: 0 auto !important;
+				padding: 0 16px !important;
+				width: auto !important;
 			}
 			ul {
 				display: flex;

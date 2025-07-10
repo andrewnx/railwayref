@@ -87,25 +87,11 @@
   // Theme toggle functionality
   const themeToggle = document.getElementById('theme-toggle');
   
-  // Get stored theme or default to light
-  const getStoredTheme = () => localStorage.getItem('theme') || 'light';
-  
   // Apply theme to document
   const applyTheme = (theme: string) => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  };
-  
-  // Initialize theme on page load
-  const initializeTheme = () => {
-    // Check for system preference if no stored theme
-    const storedTheme = localStorage.getItem('theme');
-    
-    if (!storedTheme) {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      applyTheme(prefersDark ? 'dark' : 'light');
-    } else {
-      applyTheme(storedTheme);
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('theme', theme);
     }
   };
   
@@ -119,13 +105,10 @@
   // Event listeners
   themeToggle?.addEventListener('click', toggleTheme);
   
-  // Listen for system theme changes
+  // Listen for system theme changes (only if user hasn't manually set a preference)
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (!localStorage.getItem('theme')) {
+    if (typeof localStorage !== 'undefined' && !localStorage.getItem('theme')) {
       applyTheme(e.matches ? 'dark' : 'light');
     }
   });
-  
-  // Initialize theme immediately to prevent flash
-  initializeTheme();
 </script>

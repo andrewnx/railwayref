@@ -26,3 +26,16 @@ pnpm-debug.log*
 # wrangler files
 .wrangler
 .dev.vars
+
+# Playwright testing
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/tests/*-snapshots/
+*.png
+*.jpg
+*.jpeg
+/tests/test-results/
+playwright-report/
+test-results/
